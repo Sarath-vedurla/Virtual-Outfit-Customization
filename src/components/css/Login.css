@@ -1,0 +1,98 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body and HTML */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure body does not exceed viewport width */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 60vh; /* Full viewport height */
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Login Box */
+.login-box {
+  background-color: white; /* White background for the form */
+  padding: 40px 30px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;
+  max-width: 400px; /* Max width of the form */
+  text-align: center; /* Center text */
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%; /* Full width */
+  padding: 10px; /* Spacing inside the input */
+  margin: 10px 0; /* Spacing around inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded edges */
+  transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+/* Focus Effect for Inputs */
+.input-field:focus {
+  border-color: #f0a500; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+.login-button {
+  width: 100%; /* Full width */
+  padding: 10px; /* Spacing inside the button */
+  margin-top: 20px; /* Spacing above button */
+  background-color: #f0a500; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded edges */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Button Hover Effect */
+.login-button:hover {
+  background-color: #d49100; /* Darker shade on hover */
+}
+
+/* Label Styles */
+.input-group {
+  text-align: left; /* Align labels to the right */
+  margin-bottom: 10px; /* Spacing below each input group */
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  margin-top: 10px; /* Spacing above link */
+}
+
+/* Forgot Password Link Style */
+.forgot-password a {
+  color: #f0a500; /* Link color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s; /* Transition for hover */
+}
+
+.forgot-password a:hover {
+  color: #d49100; /* Darker shade on hover */
+}
+.error_message{
+  color: red;
+  font-size: larger;
+}

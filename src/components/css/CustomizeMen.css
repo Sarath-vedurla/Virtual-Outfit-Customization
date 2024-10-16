@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+  }
+  
+  .container_1 {
+    margin-top: 73px;
+    position: relative; /* To position button within this container */
+  }
+  
+  .container_2 {
+    margin-top: 20px;
+    flex-direction: row-reverse; /* Text comes first, image comes second */
+    position: relative; /* To position button within this container */
+  }
+  
+  /* Image Container Styles */
+  .image_container {
+    width: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container_1 > .image_container {
+    background-image: url("../../images/shirt-cust.jpg"); /* Image for Container 1 */
+  }
+  
+  .container_2 > .image_container {
+    background-image: url("../../images/phants-cust.jpg"); /* Image for Container 2 */
+  }
+  
+  /* Text Container Styles */
+  .text_container {
+    width: 40%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Background for better text readability */
+    color: white;
+  }
+  
+  .text_container h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .text_container h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles for Container One */
+  .customize_button_one {
+    position: absolute; /* Absolute positioning */
+    bottom: 150px; /* Positioned 20px from the bottom */
+    left: 75%; /* Adjust left or right based on your preference */
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .customize_button_one:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    transform: translateY(-5px); /* Button moves up on hover */
+  }
+  
+  /* Button Styles for Container Two */
+  .customize_button_two {
+    position: absolute; /* Absolute positioning */
+    bottom: 150px; /* Positioned differently from the first button */
+    right: 15%; /* Positioned on the right side */
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .customize_button_two:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    transform: translateY(-5px); /* Button moves up on hover */
+  }
+  

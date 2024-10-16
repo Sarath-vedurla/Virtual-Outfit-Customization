@@ -1,0 +1,164 @@
+/* Main Container */
+.customization-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin-top: 75px; /* Space for header */
+  }
+  
+  /* Left Section: Fabric and Style Selection */
+  .selection-section {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .fabric-buttons, .style-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300px; /* Set max height to make it scrollable */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding-right: 10px;
+  }
+  
+  .fabric-selection, .style-selection {
+    margin-bottom: 20px;
+  }
+  
+  .fabric-button, .style-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .fabric-button img, .style-button img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: auto; /* Keep aspect ratio */
+    object-fit: contain; /* Display the full image without cropping */
+    margin-bottom: 10px;
+  }
+  
+  .fabric-button.active, .style-button.active {
+    background-color: #007bff; /* Active button color */
+    color: white; /* Active button text color */
+    border-color: #007bff; /* Active border color */
+  }
+  
+  .fabric-button:hover, .style-button:hover {
+    background-color: #f0f0f0; /* Hover background color */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  /* Right Section: Preview Image and Size/Quantity Selection */
+  .preview-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky; /* Keep the preview fixed on the right */
+    top: 0; /* Stay at the top */
+  }
+  
+  .dress-preview img {
+    width: 80%; /* Responsive sizing for dress preview */
+    height: auto; /* Maintain aspect ratio */
+ 
+  }
+  
+  .dress-options {
+    margin-top: 20px; /* Space above options */
+    text-align: center; /* Center text */
+  }
+  
+  .size-quantity-section {
+    display: flex;
+    justify-content: space-between; /* Space between size and quantity */
+    margin-bottom: 20px; /* Space below section */
+    flex-direction: column;
+  }
+  
+  .size-selection, .quantity-section {
+    flex: 1; /* Equal flex for size and quantity */
+    margin: 0 10px; /* Margins on sides */
+  }
+  
+  .size-buttons {
+    display: flex; /* Flexbox for size buttons */
+    justify-content: center; /* Center the buttons */
+    margin-top: 10px; /* Space above buttons */
+  }
+  
+  .size-button {
+    padding: 10px 15px; /* Padding for button */
+    border: 2px solid #ddd; /* Border for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for effects */
+    margin: 0 5px; /* Margin between buttons */
+  }
+  
+  .size-button.active {
+    background-color: #007bff; /* Active button color */
+    color: white; /* Active text color */
+    border-color: #007bff; /* Active border color */
+  }
+  
+  .size-button:hover {
+    background-color: #f0f0f0; /* Hover background color */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .quantity-section {
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    align-items: center; /* Center content */
+  }
+  
+  .quantity-buttons {
+    display: flex; /* Flexbox for quantity buttons */
+    align-items: center; /* Center alignment */
+    margin-top: 10px; /* Space above buttons */
+  }
+  
+  .quantity-button {
+    padding: 10px 15px; /* Padding for button */
+    border: 2px solid #007bff; /* Border for button */
+    border-radius: 4px; /* Rounded corners */
+    background-color: white; /* Background color */
+    color: #007bff; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for effects */
+    margin: 0 5px; /* Margin between buttons */
+  }
+  
+  .add-to-cart-button {
+    padding: 12px 20px; /* Padding for the main button */
+    background-color: #28a745; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for effects */
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #218838; /* Darker color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  

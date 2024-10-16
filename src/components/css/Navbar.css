@@ -1,0 +1,77 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Links container styling */
+.links-container {
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f0a500;
+}
+
+/* Cart icon styling */
+.cart-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart-icon {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+.cart-container .fa-shopping-cart {
+  font-size: 24px;
+  color: white;
+}
+.logout-button{
+  background-color: black;
+  color: white;
+  border: none;
+}
+.signup-button{
+  background-color: black;
+  color: white;
+  border: none;
+  margin-left: 750px;
+}

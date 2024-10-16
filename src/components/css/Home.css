@@ -1,0 +1,145 @@
+/* Welcome Container */
+.welcome_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/welcome.jpg");
+    background-size: cover;
+   
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Vertically center the content */
+    padding-left: 50px; /* Add some space from the left */
+    position: relative;
+    z-index: 1;
+    margin-top: 74px;
+  }
+  
+  /* Welcome Content Container */
+  .welcome_content {
+    text-align: center; /* Align text to the left */
+    color: black; /* Set text color to black */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Main Heading Styling */
+  .main_heading {
+    font-size: 2.5rem; /* Closer to h1 size */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Subheading Styling */
+  .sub_heading {
+    font-size: 1.75rem; /* Closer to h3 size */
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Shop Now Styling */
+  .shop_now {
+    font-size: 1.5rem; /* Closer to h3 size */
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black; /* Set color to black */
+  }
+  .features_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px;
+    background-color: #f8f8f8;
+    border-top: 2px solid #ddd; /* Adds a top border */
+  }
+  
+  .feature_box {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease; /* Enhanced transitions */
+    position: relative; /* For pseudo-element positioning */
+    overflow: hidden; /* Ensures contents stay within rounded corners */
+  }
+  
+  .feature_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    background: linear-gradient(145deg, #f9f9f9, #e0e0e0); /* Change gradient on hover */
+  }
+  
+  /* Adding a pseudo-element for a glow effect */
+  .feature_box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px; /* Match the border radius */
+    background: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+    opacity: 0;
+    transition: opacity 0.4s ease; /* Transition for the glow effect */
+  }
+  
+  .feature_box:hover::after {
+    opacity: 1; /* Show the glow effect on hover */
+  }
+  
+  .feature_box img {
+    width: 120px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Image transition */
+  }
+  
+  .feature_box img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .feature_box h1,
+  .feature_box h2,
+  .feature_box h3,
+  .feature_box h4 {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Color transition */
+  }
+  
+  .feature_box h1 {
+    font-size: 1.4rem;
+    color: #222;
+  }
+  
+  .feature_box h2 {
+    font-size: 1.3rem;
+    color: #444;
+  }
+  
+  .feature_box h3 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .feature_box h4 {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Change color on hover */
+  .feature_box:hover h1,
+  .feature_box:hover h2,
+  .feature_box:hover h3,
+  .feature_box:hover h4 {
+    color: #000; /* Change heading color on hover */
+  }

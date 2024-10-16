@@ -1,0 +1,197 @@
+/* Main Container */
+.customization-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin-top: 75px;
+}
+  
+/* Left Section: Fabric and Style Selection */
+.selection-section {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+  
+/* Scrollable container for fabrics and styles */
+.fabric-buttons, .style-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300px; /* Set max height to make it scrollable */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    padding-right: 10px;
+}
+  
+.fabric-selection, .style-selection {
+    margin-bottom: 20px;
+}
+  
+.fabric-button, .style-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 120px;
+    text-align: center;
+}
+  
+.fabric-button img, .style-button img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: auto; /* Keep aspect ratio */
+    object-fit: contain; /* Display the full image without cropping */
+    margin-bottom: 10px;
+}
+  
+.fabric-button.active, .style-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+  
+.fabric-button:hover, .style-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+  
+/* Right Section: Preview Image and Size/Quantity Selection */
+.preview-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky; /* Keep the preview fixed on the right */
+    top: 0;
+}
+  
+.shirt-preview img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.shirt-preview p {
+    font-size: 1.2rem;
+    color: #888;
+}
+  
+/* Style Names below buttons */
+.fabric-name, .style-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* New Section: Shirt Size and Quantity Selection */
+.size-quantity-section {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.size-quantity-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Shirt Size Buttons */
+.size-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.size-button {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 8px;
+    width: 70px;
+    text-align: center;
+}
+
+.size-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.size-button:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+/* Quantity Section */
+.quantity-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+
+.quantity-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.quantity-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-display {
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f0a500;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}

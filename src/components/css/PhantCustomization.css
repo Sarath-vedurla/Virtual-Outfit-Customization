@@ -1,0 +1,150 @@
+/* Main Container */
+.customization-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Left Section: Fabric and Style Selection */
+.selection-section {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scrollable container for fabrics and styles */
+.fabric-buttons, .style-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.fabric-selection, .style-selection {
+    margin-bottom: 20px;
+}
+
+.fabric-button, .style-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 120px;
+    text-align: center;
+}
+
+.fabric-button img, .style-button img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.fabric-button.active, .style-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.fabric-button:hover, .style-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Right Section: Preview Image and Size/Quantity Selection */
+.preview-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pant-preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pant-preview p {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Style Names below buttons */
+.fabric-name, .style-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* New Section: Pant Size and Quantity Selection */
+.size-quantity-section {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.size-button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.size-button:hover {
+    background-color: #d7d7d7;
+}
+
+.quantity-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-button {
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-button:disabled {
+    background-color: #ccc;
+}
+
+.add-to-cart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #218838;
+}
